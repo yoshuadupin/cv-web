@@ -1,9 +1,144 @@
-li {
-    list-style: none;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-items: center;
 }
 
-.container {
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    padding: 1em;
+    margin: 1em;
+}
+
+header img {
+    border-radius: 50%;
+    max-width: 15%;
+}
+
+.container-experience {
     display: grid;
-    grid-auto-rows:auto;
-    
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.experience-img {
+    border-radius: 20%;
+    max-width: 200px;
+}
+
+.card-experience {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    text-align: end;
+}
+
+/* Knowledge */
+
+.container-knowledge {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(3, 1frx);
+    gap: 1em 1em;
+    justify-content: center;
+}
+
+.container-knowledge div {
+    align-self: center;
+    justify-self: center;
+}
+
+.icon-tec {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+/* Education */
+
+.container-education {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.container-education .education-text2 {
+    padding-left: 30%;
+}
+
+.card-education {
+    align-items: center;
+    padding: 0.5em;
+    margin: 1em;
+    text-align: end;
+}
+
+.card-education li {
+    font-size: 0.50em;
+}
+
+.education-img {
+    border-radius: 20%;
+    max-width: 200px;
+}
+
+.education-img.img1 {
+    align-self: center;
+    justify-self: right;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.education-text1 {
+    grid-column: 3/6;
+    grid-row: 1;
+    align-self: center;
+    text-align: left;
+}
+
+.education-text2 {
+    text-align: right;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.education-img.img2 {
+    align-self: center;
+    grid-column: 4;
+    grid-row: 2;
+}
+
+/* Contact me  */
+
+.contact-img {
+    max-width: 25px;
+    margin-right: 5px;
+}
+
+/* Other skills */
+
+.container-other {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "a b";
+    gap: 10%;
+    text-align: justify;
+}
+
+.grid1{
+    grid-area: a;
+    justify-self: right;
+}
+.grid2{
+    grid-area: b;
+    justify-self: left ;
 }
