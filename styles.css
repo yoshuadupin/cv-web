@@ -2,8 +2,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     align-items: center;
+    background-image: linear-gradient( #8d1eff, #4a30f5);
 }
 
+body>div {
+    background-color: white;
+    margin: 100px;
+    border:5px solid  wheat;
+}
 
 ul {
     list-style: none;
@@ -22,14 +28,15 @@ header img {
     max-width: 15%;
 }
 
-h2{
-    font-size: 55px ;
+h2 {
+    font-size: 55px;
     margin: 20px;
 }
 
-section , footer {
-    border-top: 1px;
-    border-top-style: solid;
+section, footer {
+    border-top: 4px;
+    border-color: wheat;
+    border-top-style: dotted;
     margin-top: 1em;
     margin-bottom: 1em;
 }
@@ -37,32 +44,43 @@ section , footer {
 .container-experience {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1em;
+    margin: 25px 50px;
+    text-align: end;
 }
 
 .experience-img {
     border-radius: 20%;
     max-width: 200px;
+    align-self: center;
+    justify-self: center;
 }
 
 .card-experience {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1.25fr;
+    grid-template-rows: 250px;
     align-items: center;
-    padding: 1em;
-    margin: 1em;
-    text-align: end;
+    padding: 0.25em;
+    margin: 0.25em;
+    text-align: start;
+}
+
+.title-experience{
+    font-size: 30px;
+    margin: 0;
+    text-transform: uppercase   ;
 }
 
 /* Knowledge */
 
 .container-knowledge {
     display: grid;
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: repeat(3, 150px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 2em 2em;
     justify-content: center;
     align-content: center;
+    margin:10px 0px ;
 }
 
 .icon-tec {
@@ -75,8 +93,9 @@ section , footer {
 
 .container-education {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns:repeat(5 ,1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    margin: 0;
     gap: 1em;
 }
 
@@ -112,12 +131,17 @@ section , footer {
     grid-row: 1;
     align-self: center;
     text-align: left;
+    padding: 0;
+    
+    margin: 0;
 }
 
 .education-text2 {
     text-align: right;
     grid-column: 1/4;
     grid-row: 2;
+    padding: 0;
+    margin: 0;
 }
 
 .education-img.img2 {
@@ -139,16 +163,20 @@ section , footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "a b";
-    gap: 10%;
     text-align: justify;
+    margin: auto;
+    padding: auto;
+    gap:10%;    
 }
 
 .grid1 {
-    grid-area: a;
+    margin: 0;
+    padding: 0;
     justify-self: right;
 }
 
 .grid2 {
-    grid-area: b;
+    margin: 0;
+    padding: 0;
     justify-self: left;
 }
