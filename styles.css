@@ -4,6 +4,7 @@ body {
     align-items: center;
 }
 
+
 ul {
     list-style: none;
     margin: 0;
@@ -19,6 +20,18 @@ header {
 header img {
     border-radius: 50%;
     max-width: 15%;
+}
+
+h2{
+    font-size: 55px ;
+    margin: 20px;
+}
+
+section , footer {
+    border-top: 1px;
+    border-top-style: solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .container-experience {
@@ -46,19 +59,16 @@ header img {
 .container-knowledge {
     display: grid;
     grid-template-columns: repeat(4, 150px);
-    grid-template-rows: repeat(3, 1frx);
-    gap: 1em 1em;
+    grid-template-rows: repeat(3, 150px);
+    gap: 2em 2em;
     justify-content: center;
-}
-
-.container-knowledge div {
-    align-self: center;
-    justify-self: center;
+    align-content: center;
 }
 
 .icon-tec {
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 60px;
+    align-self: center;
+    justify-self: center;
 }
 
 /* Education */
@@ -119,7 +129,7 @@ header img {
 /* Contact me  */
 
 .contact-img {
-    max-width: 25px;
+    max-width: 15px;
     margin-right: 5px;
 }
 
@@ -128,17 +138,17 @@ header img {
 .container-other {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "a b";
+    grid-template-areas: "a b";
     gap: 10%;
     text-align: justify;
 }
 
-.grid1{
+.grid1 {
     grid-area: a;
     justify-self: right;
 }
-.grid2{
+
+.grid2 {
     grid-area: b;
-    justify-self: left ;
+    justify-self: left;
 }
